@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  
+
+  // moment time
+  const date = moment().format('dddd, MMMM Do YYYY');
+
   // test flag
   const test = false;
-
-  // get times from moment
-  const date = moment().format('dddd, MMMM Do YYYY');
 
   // commented out for test in non-standard hours
   let nowHour24 = moment().format('H');
@@ -19,7 +19,6 @@ $(document).ready(function() {
   let $dateHeading = $('#navbar-subtitle');
   $dateHeading.text(date);
   
-  // using font awesome icon https://fontawesome.com/license
   // change description here - none
   const saveIcon = "./images/save-regular.svg"; 
 
@@ -167,7 +166,7 @@ $(document).ready(function() {
     if (test) { ('index ', $index); }
     if (test) { ('click pta after '+ planTextArr); }
 
-    // remove shawdow pulse class
+    // remove alert shawdow class
     $(`#saveid-${$index}`).removeClass('shadowPulse');
     localStorage.setItem("storedPlans", JSON.stringify(planTextArr));
   });  
@@ -182,7 +181,7 @@ $(document).ready(function() {
 
     let i = $(this).attr('hour-index');
 
-    // add shawdow pulse class
+    // add alert shawdow class
     $(`#saveid-${i}`).addClass('shadowPulse');
   });
 });

@@ -13,12 +13,7 @@ input { /* need to make box fit space */
 
 .navbar {
   background-color: slategray;  
-    
-
-  /* pulls everything down to push up against bottom border */
   padding-bottom: 0;
-  
-  /* creates solid line for the bottom border  */
   border-bottom: solid;
   border-bottom-color: #333333;
   width: 100%;
@@ -33,6 +28,7 @@ input { /* need to make box fit space */
   text-align: center;
 }
 
+/* moment time and day*/
 #navbar-subtitle {
   padding: 2px;
   font-size: 20px;
@@ -45,13 +41,9 @@ input { /* need to make box fit space */
 }
 
 #plannerContainer {
-  /* background-color: #73919b;   */
   background-color: #333333;  
-  /* provides spacing between the top and bottom nav bars and the content */
   margin-top: 20px;
   margin-bottom: 80px;
-  
-  /* provide spaceing around the text */
   padding: 40px;
 } 
 
@@ -64,7 +56,7 @@ input { /* need to make box fit space */
   border-radius: 15px;
 }
 
-/* style container with time in it */
+/* time box */
 .timeBox {
   background-color: whitesmoke;  
   color: black;
@@ -88,12 +80,12 @@ input { /* need to make box fit space */
   width: 100%;
 }
 
+/* save button */
 .saveIcon {
   background-color: whitesmoke; 
   color: #442929;
   border-radius: 0px 15px 15px 0px;
   padding-top: 9px;
-  /* float: right; */
   font-size: 1.5em;
   width: 100%;
   height: 100%;
