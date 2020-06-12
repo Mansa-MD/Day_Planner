@@ -5,8 +5,6 @@
 
 *Application Link: https://mansa-md.github.io/Day_Planner/
 
-*Application Image: ![](Assets/collage.JPG)
+*Application Desktop/Mobile Image: ![](Assets/collage.JPG)
 
-*Mobile Responsive Image: 
 
-*![](Assets/mb_rp.JPG)
