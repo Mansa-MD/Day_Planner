@@ -4,7 +4,7 @@ $(document).ready(function() {
   const test = false;
 
   // get times from moment
-  const date = moment().format('LLLL');
+  const date = moment().format('dddd, MMMM Do YYYY');
 
   // commented out for test in non-standard hours
   let nowHour24 = moment().format('H');
