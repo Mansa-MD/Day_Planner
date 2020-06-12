@@ -27,7 +27,7 @@ $(document).ready(function() {
   // Parsing the JSON string to an object
   let storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
 
-  if (test) { console.log(storedPlans); }
+  if (test) { (storedPlans); }
 
   // If plans were retrieved from localStorage, update the plan array to it
   if (storedPlans !== null) {
@@ -36,17 +36,17 @@ $(document).ready(function() {
     // this should only occur on first time the app is loaded in the browser
     // helpfully remind user that lunch is important
     planTextArr = new Array(9);
-    planTextArr[4] = "Progession over perfection";
+    planTextArr[0] = "Progession over perfection";
   }
 
-  if (test) { console.log("full array of plned text",planTextArr); }
+  if (test) { ("full array of plned text",planTextArr); }
 
   // set variable referencing planner element
   let $plannerDiv = $('#plannerContainer');
   // clear existing elements
   $plannerDiv.empty();
 
-  if (test) { console.log("current time",nowHour12); }
+  if (test) { ("current time",nowHour12); }
 
 
   // build calendar by row for fix set of hours
@@ -133,17 +133,17 @@ $(document).ready(function() {
   // function to update row color
   function updateRowColor ($hourRow,hour) { 
 
-    if (test) { console.log("rowColor ",nowHour24, hour); }
+    if (test) { ("rowColor ",nowHour24, hour); }
 
     if ( hour < nowHour24) {
       // $hourRow.css('')
-      if (test) { console.log("lessThan"); }
+      if (test) { ("lessThan"); }
       $hourRow.css("background-color","lightgrey")
     } else if ( hour > nowHour24) {
-      if (test) { console.log("greaterthan"); }
+      if (test) { ("greaterthan"); }
       $hourRow.css("background-color","lightgreen")
     } else {
-      if (test) { console.log("eqaul"); }
+      if (test) { ("eqaul"); }
       $hourRow.css("background-color","tomato")
     }
   };
@@ -153,7 +153,7 @@ $(document).ready(function() {
   $(document).on('click','i', function(event) {
     event.preventDefault();  
 
-    if (test) { console.log('click pta before '+ planTextArr); }
+    if (test) { ('click pta before '+ planTextArr); }
 
     let $index = $(this).attr('save-id');
 
@@ -163,9 +163,9 @@ $(document).ready(function() {
     planTextArr[$index] = $value;
 
 
-    if (test) { console.log('value ', $value); }
-    if (test) { console.log('index ', $index); }
-    if (test) { console.log('click pta after '+ planTextArr); }
+    if (test) { ('value ', $value); }
+    if (test) { ('index ', $index); }
+    if (test) { ('click pta after '+ planTextArr); }
 
     // remove shawdow pulse class
     $(`#saveid-${$index}`).removeClass('shadowPulse');
@@ -175,8 +175,8 @@ $(document).ready(function() {
   // function to color save button on change of input
   $(document).on('change','input', function(event) {
     event.preventDefault();  
-    if (test) { console.log('onChange'); }
-    if (test) { console.log('id', $(this).attr('hour-index')); }
+    if (test) { ('onChange'); }
+    if (test) { ('id', $(this).attr('hour-index')); }
 
     // neeed to check for save button
 
