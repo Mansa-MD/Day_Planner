@@ -4,14 +4,10 @@ body {
   vertical-align: middle;
 }
 
-
-/*  need to make box fit space */
-input {
+input { /* need to make box fit space */
   background: transparent;
   border: none;
-
-  /* so cursor appears */
-  padding-left: 3px;
+  padding-left: 3px; /* so cursor appears */
 }
 
 
@@ -32,15 +28,15 @@ input {
 #navbar-title {
   font-family: 'Anton', sans-serif;
   padding: 0px;
-  font-size: 30px;
-  color: linen!important; /* TODO can we do this without the !important */
+  font-size: 35px;
+  color: #333333!important; 
   text-align: center;
 }
 
 #navbar-subtitle {
   padding: 2px;
-  font-size: 15px;
-  color: linen!important; /* TODO can we do this without the !important */
+  font-size: 20px;
+  color: whitesmoke!important; 
   text-align: center;
 }
 
@@ -94,7 +90,7 @@ input {
 
 .saveIcon {
   background-color: whitesmoke; 
-  color: #423232;
+  color: #442929;
   border-radius: 0px 15px 15px 0px;
   padding-top: 9px;
   /* float: right; */

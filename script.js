@@ -4,7 +4,7 @@ $(document).ready(function() {
   const test = false;
 
   // get times from moment
-  const now = moment().format('MMMM Do YYYY');
+  const date = moment().format('LLLL');
 
   // commented out for test in non-standard hours
   let nowHour24 = moment().format('H');
@@ -17,7 +17,7 @@ $(document).ready(function() {
   }
 
   let $dateHeading = $('#navbar-subtitle');
-  $dateHeading.text(now);
+  $dateHeading.text(date);
   
   // using font awesome icon https://fontawesome.com/license
   // change description here - none
@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 
   // build calendar by row for fix set of hours
-  for (let hour = 9; hour <= 17; hour++) {
+  for (let hour = 9; hour <= 18; hour++) {
     // index for array use offset from hour
     let index = hour - 9;
     
