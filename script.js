@@ -33,7 +33,7 @@ $(document).ready(function() {
     planTextArr = storedPlans;
   } else {
     // this should only occur on first time the app is loaded in the browser
-    // helpfully remind user that lunch is important
+    // reminder quote
     planTextArr = new Array(9);
     planTextArr[0] = "Progession over perfection";
   }
@@ -147,7 +147,7 @@ $(document).ready(function() {
     }
   };
 
-  // saves to local storage
+  // save to local storage
   // conclick function to listen for user clicks on plan area
   $(document).on('click','i', function(event) {
     event.preventDefault();  
